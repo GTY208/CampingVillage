@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Overzicht</title>
+    
+
+
+<body>
+
+<div class="topnav">
+  <a href="index.php"><img src="afbeelding2.png" width="170" height="100"></a>
+  <a href="activiteiten.php">ACTIVITEITEN</a>
+  <a href="reserveren.php">RESERVEREN</a>
+  <a href="admin.php">ADMIN</a>
+</div>
+<br>
+
+<form action="reserveringen.php" class="inline">
+    <button class="float-left submit-button" >RESERVERINGEN</button>
+</form>
+<br>
+<br>
+<form action="aanmeldingen.php" class="inline">
+    <button class="float-left submit-button" >AANMELDINGEN</button>
+</form>
+
+
+</body>
+</html>
