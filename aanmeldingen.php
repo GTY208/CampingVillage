@@ -44,8 +44,8 @@ table {
 <table>
   <tr>
     <th>naam</th>
-    <th>achternaam</th>
     <th>activiteit</th>
+    <th>tijd</th>
   </tr>
   <tr>
     <td>-</td>
