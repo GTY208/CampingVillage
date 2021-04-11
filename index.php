@@ -17,12 +17,15 @@ img {
 
 <body>
 
+
+
 <div class="topnav">
   <a href="index.php"><img src="afbeelding2.png" width="170" height="100"></a>
   <a href="activiteiten.php">ACTIVITEITEN</a>
   <a href="reserveren.php">RESERVEREN</a>
   <a href="admin.php">ADMIN</a>
 </div>
+
 <br>
 <br>
 <br>
@@ -34,7 +37,8 @@ img {
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<font size="12" color="white" face=""> WELKOM BIJ CAMPING VILLAGE! </font>
+
+   <font size="12" color="white" face=""> WELKOM BIJ CAMPING VILLAGE! </font>
 
 <br>
 <br>
@@ -48,17 +52,19 @@ img {
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-<font size="4" color="white" face=""> Wij hebben verschillende soorten activiteiten in onze camping waar je je voor kan inschrijven zoals: </font>
+   <font size="4" color="white" face=""> Wij hebben verschillende soorten activiteiten in onze camping waar je je voor kan inschrijven zoals: </font>
 
 
 <br>
 <br>
 <br>
-<body>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
+   <body>
       <img src="mountainbike.jpg" alt="knutselen" width="250"
          height="200">
    </body>
@@ -86,40 +92,41 @@ img {
       <img src="water.jpeg" alt="water" width="250"
          height="200">
    </body>
+
 <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<font size="4" color="white" face=""> MOUNTAINBIKE </font>
+
+   <font size="4" color="white" face=""> MOUNTAINBIKE </font>
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<font size="4" color="white" face=""> KNUTSELEN </font>
+
+   <font size="4" color="white" face=""> KNUTSELEN </font>
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<font size="4" color="white" face=""> JEU DE BOELE </font>
+
+   <font size="4" color="white" face=""> JEU DE BOELE </font>
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<font size="4" color="white" face=""> WATER ACROBATICS </font>
+
+   <font size="4" color="white" face=""> WATER ACROBATICS </font>
 
 <br>
 <br>
 <br>
-
-
-
-
-
-
-
 <br>
 <br>
 <br>
@@ -139,9 +146,8 @@ img {
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
 
-<font size="15" color="white" face="">
-CONTACT
-</font>
+   <font size="15" color="white" face="">CONTACT</font>
+
 <br>
 <br>
 <br>
@@ -155,9 +161,9 @@ CONTACT
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<font size="4" color="white" face="">
-U kunt ons contacteren via ons telefoonnummer : 06123456789
-</font>
+
+   <font size="4" color="white" face="">U kunt ons contacteren via ons telefoonnummer : 06123456789</font>
+
 <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -169,9 +175,9 @@ U kunt ons contacteren via ons telefoonnummer : 06123456789
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<font size="4" color="white" face="">
-Of u kunt een mail sturen naar : campingvillage@hotmail.com
-</font>
+
+   <font size="4" color="white" face="">Of u kunt een mail sturen naar : campingvillage@hotmail.com</font>
+
 <br>
 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -183,9 +189,8 @@ Of u kunt een mail sturen naar : campingvillage@hotmail.com
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<font size="4" color="white" face="">
-U kunt ons ook fysiek bezoeken in Houtkampweg 515, 6754 RA Otterlo
-</font>
+
+   <font size="4" color="white" face="">U kunt ons ook fysiek bezoeken in Houtkampweg 515, 6754 RA Otterlo</font>
 
 
 <br>

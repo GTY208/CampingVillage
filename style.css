@@ -55,5 +55,17 @@ body {
   background-position: center;   
   height: 97vh; }
 
+
+
+  .table_activiteiten {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width:100%;
+  }
+
   
-  
+  .table_reservering {
+    border: 2px solid black;
+    border-collapse: collapse;
+    width:100%;
+  }

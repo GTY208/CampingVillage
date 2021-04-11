@@ -1,3 +1,35 @@
+<?php
+
+include 'database.php';
+
+$msg = '';
+if(isset($_POST['submit'])){
+
+    $fieldnames = ['username', 'keuze'];
+    $error = false;
+
+    foreach($fieldnames as $fieldname){
+        if(!isset($_POST[$fieldname]) || empty($_POST[$fieldname])){
+            $error = true; 
+            $msg = 'error';
+        }
+
+    }
+
+    if(!$error){
+        $obj = new database();
+        $obj->insertActiviteit($_POST['username'], $_POST['keuze']);
+        //yurr
+    }else{
+        //do something
+    }
+}
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -53,23 +85,30 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 <font size="4" color="white" face=""> MOUNTAINBIKE </font>
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 <font size="4" color="white" face=""> KNUTSELEN </font>
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 <font size="4" color="white" face=""> JEU DE BOELE </font>
+
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
 <font size="4" color="white" face=""> WATER ACROBATICS </font>
 
 <br>
@@ -123,26 +162,36 @@ selecteer uw activiteit
 <br>
 <br>
 
-<div class="container">
-  <form action="index.php">
-    <font size="4" color="white" face=""> Naam </font>
-    <input type="text" id="naam" name="naam" placeholder="uw naam.."required>
+<form class= "form" method="POST" action="activiteiten.php">
+  <div>
 
-    
+<br>
+<br>
+<br>
+    <label for="username"> &nbsp; NAAM:</label> 
+    <input type="text" name="username" placeholder="name" required
+        minlength="2" maxlength="255" size="30">
+             <p>KIES JE ACTIVITEIT</p>
+              <select id="kiesActiviteit" name="keuze" required>
+              <option value="" disabled selected>Kies uw activiteit</option>
+              <option value="Mountainbiken">MOUNTANBIKEN</option>
+              <option value="Knutselen">KNUTSELEN</option>
+              <option value="Jeu de Boele wedstrijd">JEU DE BOELE</option>
+              <option value="Water Aerobics">WATER ACROBATICS</option>
+            </select>
+<br>
+<br>
+        <button type="submit" name="submit" class="btn">SUBMIT</button>
+</form>
 
-    <font size="4" color="white" face=""> activiteit </font>
-    <select id="activiteit" name="activiteit">
-      <option value="australia">MOUNTAIN BIKEN</option>
-      <option value="canada">KNUTSELEN</option>
-      <option value="usa">JEU DE BOELE</option>
-      <option value="usa">WATER ACROBATICS</option>
-    </select>
-  
-    <input type="submit" value="Submit">
-  </form>
-</div>
+<br> 
+<br> 
+<br> 
+<br> 
+<br> 
+<br>
 
-    
+
 
 </body>
 </html>

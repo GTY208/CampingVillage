@@ -1,3 +1,34 @@
+<?php
+
+include 'database.php';
+
+  $msg = '';
+  if(isset($_POST['submit'])){
+
+    $fieldnames = ['username', 'password'];
+    $error = false;
+
+    foreach($fieldnames as $fieldname){
+        if(!isset($_POST[$fieldname]) || empty($_POST[$fieldname])){
+            $error = true; 
+            $msg = 'error';
+        }
+
+    }
+
+    if(!$error){
+        $obj = new database();
+        $obj->loginmedewerker($_POST['username'], $_POST['password']);
+        //nigger
+    }else{
+        //prr
+    }
+}
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,18 +88,19 @@ input[type=submit]:hover {
 <br>
 
 <div class="container">
-  <form action="overzicht.php">
+  <form method="POST">
 
     <font size="4" color="white" face=""> Naam </font>
-    <input type="text" id="naam" name="naam" placeholder="uw naam.."required>
+    <input type="text" id="naam" name="username" placeholder="uw naam.."required>
+
 <br>
-    <font size="4" color="white" face=""> Achternaam </font>
-    <input type="text" id="achternaam" name="achternaam" placeholder="uw achternaam.."required>
-<br>
+
 <font size="4" color="white" face=""> Wachtwoord </font>
     <input type="password" id="password" name="password" placeholder="uw wachtwoord.."required>
+
 <br>
-    <input type="submit" value="Submit">
+
+    <button type="submit" name="submit" class="btn">SUBMIT</button>
   </form>
 
 </body>

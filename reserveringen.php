@@ -1,3 +1,16 @@
+<?php
+
+include 'database.php';
+
+$DB = new database();
+
+$activiteiten = $DB->getAllActivities();
+$reservering = $DB->getAllReseveringen();
+
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>

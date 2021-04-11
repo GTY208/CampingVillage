@@ -1,3 +1,36 @@
+<?php
+
+include 'database.php';
+
+$msg = '';
+if(isset($_POST['submit'])){
+
+    $fieldnames = ['username', 'adres', 'date', 'duur', 'keuze_verblijf', 'aantal_personen'];
+    $error = false;
+
+    foreach($fieldnames as $fieldname){
+        if(!isset($_POST[$fieldname]) || empty($_POST[$fieldname])){
+            $error = true; 
+            $msg = 'error';
+        }
+
+    }
+
+    if(!$error){
+        $obj = new database();
+        $obj->insertreservering($_POST['username'], $_POST['adres'], $_POST['date'], $_POST['duur'], $_POST['keuze_verblijf'], $_POST['aantal_personen']);
+        //yurr
+    }else{
+        //do something
+    }
+}
+
+
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -60,98 +93,24 @@ reservering
 <br>
 <br>
 
-<div class="container">
-  <form action="index.php">
-    <font size="4" color="white" face=""> Naam </font>
-    <input type="text" id="naam" name="naam" placeholder="uw naam.."required>
-
-    <font size="4" color="white" face=""> Achternaam </font>
-    <input type="text" id="achternaam" name="achternaam" placeholder="uw achternaam.."required>
-
-    <font size="4" color="white" face=""> Adres </font>
-    <input type="text" id="adres" name="adres" placeholder="uw adres.."required>
-
-<br>
-<font size="4" color="white" face=""> Verblijf </font><br>
-  
-    <select id="verbljf" name="verblijf">
-      <option value="australia">TENT</option>
-      <option value="canada">CARAVAN</option>
-    </select>
-
-    <font size="4" color="white" face=""> Aantal personen </font>
-    <input type="text" id="aantal" name="aantal" placeholder="aantal personen.."required>
-    
+<form class="reserveren_form" method="post" action="reserveren.php">
+                <input type="text" name="username" placeholder="Naam" required/><br>
+                <input type="text" name="adres" placeholder="Adres" required/><br>
+                <input type="date" name="date" placeholder="Datum voor reservering" required/><br>
+                <input type="number" name="duur" placeholder="Duur vakantie" required/><br>
+                <select id="keuze_verblijf" name="keuze_verblijf" required>
+                  <option value="">Kies verblijf</option>
+                  <option value="Caravan">Caravan</option>
+                  <option value="Tent">Tent</option>
+                </select>
+                <input type="number" name="aantal_personen" placeholder="Aantal personen" required/><br>
+                <button type="submit" name="submit" class="btn">Reserveer</button><br>
+        </form>
     <br>
-    
-    <font size="4" color="white" face=""> Activiteit </font>
-    <select id="Activity" name="Activity">
-      <option value="australia">MOUNTAIN BIKEN</option>
-      <option value="canada">KNUTSELEN</option>
-      <option value="usa">JEU DE BOELE</option>
-      <option value="usa">WATER ACROBATICS</option>
-    </select>
-
-    <br>
-
-    <font size="4" color="white" face=""> Dag </font>
     
     <br>
 
-    <label class="container"><font size="2" color="white" face=""> Maandag </font>
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-
-
-
-<label class="container"><font size="2" color="white" face=""> Dinsdag </font>
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-
-
-
-<label class="container"><font size="2" color="white" face=""> Woensdag </font>
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-
-
-
-<label class="container"><font size="2" color="white" face=""> Donderdag </font>
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-
-
-
-<label class="container"><font size="2" color="white" face=""> Vrijdag </font>
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-
-
-
-<label class="container"><font size="2" color="white" face=""> Zaterdag </font>
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-
-
-
-<label class="container"><font size="2" color="white" face=""> Zondag </font>
-  <input type="checkbox">
-  <span class="checkmark"></span>
-</label>
-
-<br>
-<br>
-<br>
-
-    <input type="submit" value="Submit">
-  </form>
-</div>
+    
 
 </body>
 </html>
